@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Common Classes start*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex_start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex_end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.white-txt {
+    color: white;
+}
+
+.orange-txt {
+    color: #f19204;
+}
+
+.blue-txt {
+    color:#1c609b;
+}
+
+.pad-sm {
+    padding: 15px;
+}
+
+/*Common Classes end*/
+
+/*Heading style start*/
+#heading {
+    background-color: #333333;
+    min-height: 50px;
+}
+
+#web_title {
+    flex: 8;
+}
+
+#join_btn {
+    background-color: #ff9900;
+    padding: .25rem .75rem;
+    font-size: large;
+    flex: 1;
+    box-shadow: 5px 5px black;
+}
+
+#login_btn {
+    background-color: #085394;
+    color: white;
+    padding: .25rem .75rem;
+    font-size: large;
+    flex: 1;
+    box-shadow: 5px 5px black;
+}
+
+/*Heading style end */
+
+/*Menu style start*/
+#menu {
+    background-color: #f9cb9c;
+}
+
+#search_txt {
+    height: 2.5rem;
+    background: white;
+    border-radius: 30px 0 0 30px;
+    border: 3px solid #085394;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+    box-shadow: 5px 5px black;
+}
+
+#go_btn {
+    background-color: #085394;
+    height: 2.5rem;
+    color: white;
+    border-radius: 0 030px 30px 0;
+    border: 3px solid #085394;
+    padding: .5rem .5rem .5rem .5rem;
+    box-shadow: 5px 5px black;
+}
+
+.menu_img {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu_desc {
+    text-align: center;
+}
+
+/*Menu style end*/
+
+/*Main style start*/
+
+#left_col {
+    flex: 2;
+    background-color: #eeeeee; 
+}
+
+#right_col {
+    flex: 1;
+}
+
+#left_col h2 {
+    text-align: center;
+}
+
+.receipe_img {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.receipe_name {
+    flex: 5;
+}
+
+.likes {
+    flex: 1;
+}
+
+.like_img {
+    height: 25px;
+    width: 25px;
+}
+
+#see_full_receipe {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#right_col h4 {
+    margin-bottom: 10px;
+}
+
+/*Main style end*/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDessert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Heading-->
+    <div id="heading" class="container flex pad-sm">
+        <div id="web_title" class="flex_start">
+            <h1 class="white-txt">Just</h1>
+            <h1 class="orange-txt">Dessert</h1>
+        </div>
+        <button id="join_btn" onclick="removeJoin(this)">Join</button>
+        <button id="login_btn">Login</button>
+    </div>
+    <!--Menu with Search and Picture Navigation (nav not configed for exam)-->
+    <div id="menu" class="container flex pad-sm">
+        <div id="search">
+            <input type="text" name="search_txt" id="search_txt" placeholder="SEARCH">
+            <button id="go_btn" onclick="searchAlert()">GO</button>
+        </div>
+        <div>
+            <img class="menu_img" src="./Images/cake.png" alt="Picture of Cake">
+            <p class="menu_desc">Cakes</p>
+        </div>
+        <div>
+            <img class="menu_img" src="./Images/ice-cream.png" alt="Picture of Ice Cream">
+            <p class="menu_desc">Ice Cream</p>
+        </div>
+        <div>
+            <img class="menu_img" src="./Images/cookie.png" alt="Picture of Cookie">
+            <p class="menu_desc">Cookies</p>
+        </div>
+        <div>
+            <img class="menu_img" src="./Images/pie.png" alt="Picture of Pie">
+            <p class="menu_desc">Pies</p>
+        </div>
+    </div>
+    <!--Main section with columns-->
+    <div id="main" class="container flex">
+        <div id="left_col" class="pad-sm">
+            <h2 class="blue-txt">Receipe of the Day</h2>
+            <img class="receipe_img" src="./Images/orange-tart.jpg" alt="Picture of Orange Tart">
+            <div class="flex">
+                <p class="receipe_name">Orange Tea Jelly Tart</p>
+                <div class="likes flex_end">
+                    <img id="like_img_1" class="like_img" src="./Images/heart.png" alt="Picture of Heart" onclick="addLike1()">
+                    <p id="likes_img_1_count" class="like_count">68</p>
+                </div>
+            </div>
+            <p>by: <a href="#">yuripiano</a></p>
+            <p id="see_full_receipe"><a href="#">See Full Receipe</a></p>
+        </div>
+        <div id="right_col" class="pad-sm">
+            <h4>Recommended by you:</h4>
+            <hr>
+            <img class="receipe_img" src="./Images/macarons.jpg" alt="Picture of Macarons">
+            <div class="flex">
+                <p class="receipe_name">Macarons</p>
+                <div class="likes flex_end">
+                    <img id="like_img_2" class="like_img" src="./Images/heart.png" alt="Picture of Heart" onclick="addLike2()">
+                    <p id="likes_img_2_count" class="like_count">212</p>
+                </div>
+            </div>
+            <p>by: <a href="#">EmilieW</a></p>
+            <img class="receipe_img" src="./Images/creme-brulee.jpg" alt="Picture of Crème Brûlée">
+            <div class="flex_start">
+                <p class="receipe_name">Crème Brûlée</p>
+                <div class="likes flex_end">
+                    <img id="like_img_3" class="like_img" src="./Images/heart.png" alt="Picture of Heart" onclick="addLike3()">
+                    <p id="likes_img_3_count" class="like_count">33</p>
+                </div>
+            </div>
+            <p>by: <a href="#">MarisaG</a></p>
+        </div>
+    </div>
+    <!--Script tag-->
+    <script src="script.js"></script>
+</body>
+</html>
